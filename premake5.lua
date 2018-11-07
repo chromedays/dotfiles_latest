@@ -9,8 +9,8 @@ workspace %WORKSPACE_NAME%
     architecture "x64"
     configurations {"debug", "release"}
     warnings "Extra"
-    language "C"
-    compileas "C"
+    language "C++"
+    compileas "C++"
     -- staticruntime "On" -- available on master build
     flags {"MultiProcessorCompile", "NoMinimalRebuild",
            "NoBufferSecurityCheck", "FatalCompileWarnings"}
@@ -26,6 +26,8 @@ project %PROJECT_NAME% -- TEMPLATE
     kind "ConsoleApp"
 
     files {"**.h", "**.hpp", "code/*.cpp", "code/*.c"}
+
+    debugdir "data"
 
     filter "configurations:debug"
         targetdir "build/debug"
