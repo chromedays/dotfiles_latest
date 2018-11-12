@@ -29,6 +29,9 @@ Plug 'mh21/errormarker.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vitalk/vim-simple-todo'
+if has('unix')
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+endif
 
 "Plug 'tpope/vim-fugitive'
 "Plug 'junegunn/gv.vim'
