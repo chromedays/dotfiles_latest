@@ -1,0 +1,15 @@
+alias v=vim
+alias s=gs
+alias a=ga
+alias dc=gdc
+alias d=gd
+alias aa=gaa
+alias c=gc
+alias l=gl
+alias ze="v ~/.shrc"
+alias zs="source ~/.zshrc"
+
+function chpwd() {
+    emulate -L zsh
+    ls -a
+}
