@@ -20,7 +20,7 @@ workspace %WORKSPACE_NAME%
     architecture "x64"
     defines {"_CRT_SECURE_NO_WARNINGS"}
     links {%LIB_NAMES_WITHOUT_EXTENSION%} -- TEMPLATE
-    disablewarnings {"4204", "4133", "4505", "4456", "4201", "4100", "4189", "4458", "4819", "4127", "4701", "4291"}
+    disablewarnings {"4101", "4204", "4133", "4505", "4456", "4201", "4100", "4189", "4458", "4819", "4127", "4701", "4291"}
 
 project %PROJECT_NAME% -- TEMPLATE
     kind "ConsoleApp"
