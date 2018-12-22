@@ -76,7 +76,7 @@ set hidden "Allow background buffers without saving
 set spell spelllang=en_us
 set splitright "Split to right by default
 set nospell
-colorscheme onedark
+colorscheme dracula
 
 " Text Wrapping
 set textwidth=80
