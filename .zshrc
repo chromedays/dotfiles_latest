@@ -96,3 +96,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -s "/home/ik/.scm_breeze/scm_breeze.sh" ] && source "/home/ik/.scm_breeze/scm_breeze.sh"
