@@ -98,3 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -s "/home/ik/.scm_breeze/scm_breeze.sh" ] && source "/home/ik/.scm_breeze/scm_breeze.sh"
+
+alias s=gs
+alias a=ga
+alias aa=gaa
+alias c=gcv
+alias d=gd
+alias dc=gdc
