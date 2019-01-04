@@ -1,0 +1,5 @@
+# YOU MUST ADD IMWHEEL AS STARTUP PROGRAM OF LINUX
+# Ubuntu: "Startup Applications" -> Add imwheel as a Startup Program
+".*"
+None,       Up,     Up,     3
+None,       Down,   Down,   3
