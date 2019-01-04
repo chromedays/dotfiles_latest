@@ -105,3 +105,6 @@ alias aa=gaa
 alias c=gcv
 alias d=gd
 alias dc=gdc
+alias l=gl
+alias p=gp
+alias u="git pull --rebase --autostash"
