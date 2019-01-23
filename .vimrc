@@ -134,6 +134,9 @@ set makeprg=build.bat " TODO: unix version of build.bat
 " Gvim configs {{{
 " Maxmize
 autocmd GUIEnter * simalt ~x
+if has('gui_running')
+    set guifont=DejaVu_Sans_Mono:h11
+endif
 " }}}
 
 " Set Cut/Copy/Paste command to use clipboard register {{{
