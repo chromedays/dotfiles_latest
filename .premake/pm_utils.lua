@@ -2,24 +2,24 @@
 
 local m = {}
 
-local get_default_action = function(os_id)
-    local default_action = {
-        ["windows"] = "vs2017",
-        ["linux"] = "gmake"
-    }
+function m.make_single_c_project_single_workspace(project_name, abs_root_path)
+    local get_default_action = function(os_id)
+        local default_action = {
+            ["windows"] = "vs2017",
+            ["linux"] = "gmake"
+        }
 
-    local selected_action = default_action[os_id]
-    assert(selected_action ~= nil, "Failed to find default action of current os")
+        local selected_action = default_action[os_id]
+        assert(selected_action ~= nil, "Failed to find default action of current os")
 
-    return selected_action
-end
+        return selected_action
+    end
 
-local set_action = function(action)
-    printf("Action: [%s]", action)
-    _ACTION = action
-end
+    local set_action = function(action)
+        printf("Action: [%s]", action)
+        _ACTION = action
+    end
 
-function m.make_single_c_project_single_workspace(project_name)
     local target_os = os.host()
     printf("Current OS: [%s]", os.host())
     printf("Target OS: [%s]", target_os) -- TODO(illkwon): Should I set _TARGET_OS manually?
@@ -28,6 +28,11 @@ function m.make_single_c_project_single_workspace(project_name)
     local workspace_name = project_name .. "_ws"
 
     workspace(workspace_name)
+        --base_dir = os.getcwd() .. "/" .. base_dir
+        --base_dir = os.realpath(base_dir)
+        --basedir(base_dir)
+        location(abs_root_path)
+
         configurations {"debug", "release"}
         warnings "Extra"
         language "C"
@@ -75,15 +80,16 @@ function m.make_single_c_project_single_workspace(project_name)
 
     project(project_name)
         kind "ConsoleApp" -- TODO(illkwon): Choose between ConsoleApp and WindowedApp?
-        files {"**.h", "**.c"}
-        debugdir "data"
+        location(abs_root_path)
+        files {abs_root_path .. "/**.h", abs_root_path .. "/**.c"}
+        debugdir(abs_root_path  .. "/data")
 
         filter "configurations:debug"
             intrinsics "on"
-            targetdir "build/debug"
+            targetdir(abs_root_path .. "/build/debug")
             defines "DEBUG"
         filter "configurations:release"
-            targetdir "build/release"
+            targetdir(abs_root_path .. "build/release")
             optimize "On"
 end
 
