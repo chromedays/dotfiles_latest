@@ -17,5 +17,9 @@
             "before": ["J", "K"],
             "after": ["<Esc>"]
         }
-    ]
+    ],
+    "terminal.integrated.shell.windows": "C:\\Users\\haik0\\scoop\\apps\\pwsh\\current\\pwsh.EXE",
+    "debug.allowBreakpointsEverywhere": true,
+    "glassit.alpha": 220,
+    "editor.formatOnSave": true
 }
