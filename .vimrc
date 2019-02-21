@@ -76,7 +76,16 @@ set hidden "Allow background buffers without saving
 set spell spelllang=en_us
 set splitright "Split to right by default
 set nospell
-colorscheme dracula
+
+if has('gui_running')
+    colorscheme dracula
+else
+    if has('win32')
+        colorscheme default
+    else
+        colorscheme dracula
+    endif
+endif
 
 " Text Wrapping
 set textwidth=80
@@ -135,7 +144,7 @@ set makeprg=build.bat " TODO: unix version of build.bat
 " Maxmize
 autocmd GUIEnter * simalt ~x
 if has('gui_running')
-    set guifont=DejaVu_Sans_Mono:h11
+    set guifont=Consolas:h11
 endif
 " }}}
 
