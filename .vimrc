@@ -65,6 +65,9 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
 let g:simple_todo_map_insert_mode_keys = 0
+
+let g:togglecursor_force = 'xterm'
+
 " }}}
 
 " Shared configurations (can be used by other vim emulators) {{{
