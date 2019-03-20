@@ -108,3 +108,5 @@ alias dc=gdc
 alias l=gl
 alias p=gp
 alias u="git pull --rebase --autostash"
+
+alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
