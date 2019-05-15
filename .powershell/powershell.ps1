@@ -1,6 +1,4 @@
-
-try { $null = gcm pshazz -ea stop; pshazz init 'default' } catch { }
-
 Set-PSReadlineOption -BellStyle None
-
-. ~\posh-git-alias.ps1
+function dot() {
+    git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME @args
+}
