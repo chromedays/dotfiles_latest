@@ -1,0 +1,1 @@
+scoop export | cut -d' ' -f1 > package_list.txt
