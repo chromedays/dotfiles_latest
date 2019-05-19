@@ -40,5 +40,6 @@
     ],
     "editor.formatOnSave": true,
     "glassit.alpha": 220,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": false
 }
