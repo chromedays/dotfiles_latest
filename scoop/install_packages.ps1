@@ -1,0 +1,1 @@
+cat package_list.txt | % {scoop install $_}
