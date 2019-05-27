@@ -3,12 +3,17 @@ aria2
 cacert
 ccat
 cloc
+cmake
 consolez
 coreutils
 curl
+dark
 everything
 git
+honeyview
 hub
+innounp
+kakaotalk
 lazygit
 less
 obs-studio
@@ -22,6 +27,8 @@ ripgrep
 sharpkeys
 speedcrunch
 steam
+sudo
+sumatrapdf
 touch
 vim
 vscode
