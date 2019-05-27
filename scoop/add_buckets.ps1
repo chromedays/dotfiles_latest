@@ -1,0 +1,1 @@
+cat bucket_list.txt | % {scoop bucket add $_}
