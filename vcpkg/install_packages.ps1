@@ -1,0 +1,1 @@
+cat vcpkg_package_list.txt | % { vcpkg install $_ }
