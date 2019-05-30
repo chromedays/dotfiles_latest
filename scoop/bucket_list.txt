@@ -1,3 +1,4 @@
 ﻿extras
 main
 versions
+Ash258 https://github.com/Ash258/scoop-Ash258.git
