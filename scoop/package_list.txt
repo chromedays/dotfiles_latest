@@ -9,6 +9,7 @@ coreutils
 curl
 dark
 everything
+firefox
 git
 honeyview
 hub
