@@ -2,12 +2,14 @@
 aria2
 cacert
 ccat
+chrome
 cloc
 cmake
 consolez
 coreutils
 curl
 dark
+dotnet-sdk-preview
 everything
 firefox
 git
