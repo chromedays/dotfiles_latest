@@ -29,6 +29,7 @@ rapidee
 renderdoc
 ripgrep
 sharpkeys
+spacesniffer
 speedcrunch
 steam
 sudo
