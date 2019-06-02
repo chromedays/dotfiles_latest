@@ -10,6 +10,7 @@ coreutils
 curl
 dark
 dotnet-sdk-preview
+epicgameslauncher
 everything
 firefox
 git
