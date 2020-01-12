@@ -1,6 +1,9 @@
 " {{{ Plugins
-call plug#begin(stdpath('data').'/plugged')
-Plug 'sheerun/vim-polyglot'
+" call plug#begin(stdpath('data').'/plugged')
+call plug#begin()
+Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 " }}} Plugins
 
@@ -47,6 +50,14 @@ augroup filetype_vim
 augroup END
 " }}} autocmds for file types
 
+" {{{ https://github.com/neoclide/coc.nvim
+"set cmdheight=2
+"set updatetime=300
+"set shortmess+=c
+" }}}
+
+" Use powershell core, even in *nix os!
+set shell=pwsh
 
 " }}} Vim specific configs
 
