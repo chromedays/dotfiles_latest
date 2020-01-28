@@ -2,7 +2,12 @@
 " call plug#begin(stdpath('data').'/plugged')
 call plug#begin()
 Plug 'rafi/awesome-vim-colorschemes'
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'voldikss/vim-floaterm'
+" Plug 'airblade/vim-gitgutter' " TODO: Not working properly
 " Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 " }}} Plugins
@@ -17,6 +22,7 @@ inoremap jK <Esc>
 inoremap Jk <Esc>
 inoremap JK <Esc>
 nnoremap <leader>er :exe 'edit' stdpath('config').'/init.vim'<cr>
+nnoremap <leader>hh :nohls<cr>
 " }}} Keybindings
 
 " {{{ Tabs
@@ -39,9 +45,33 @@ iabbrev reutnr return
 iabbrev reutrn return
 " }}} Abbreviations for typos
 
+" {{{ Case-insensitive search (only if it doesn't contain uppercase
+set ignorecase
+set smartcase
+" }}}
+
 " }}} Shared configs (can be used by other vim emulator)
 
 " {{{ Vim specific configs
+
+if has('win32')
+    source $VIMRUNTIME/mswin.vim
+endif
+
+" {{{ NERDTree
+nnoremap <c-n> :NERDTreeToggle<cr>
+" }}} NERDTree
+
+" {{{ ctrlp
+let g:ctrlp_custom_ignore=['.git/']
+" }}} ctrlp
+
+" {{{ floaterm
+let g:floaterm_type = 'floating'
+let g:floaterm_winblend = 30
+let g:floaterm_position = 'center'
+let g:floaterm_keymap_toggle = '<F10>'
+" }}} floaterm
 
 " {{{ autocmds for file types
 augroup filetype_vim
@@ -58,6 +88,7 @@ augroup END
 
 " Use powershell core, even in *nix os!
 set shell=pwsh
+
 
 " }}} Vim specific configs
 
