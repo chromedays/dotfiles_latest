@@ -54,8 +54,9 @@ set smartcase
 
 " {{{ Vim specific configs
 
+" Weird cursor behaviour in nvim
 if has('win32')
-    source $VIMRUNTIME/mswin.vim
+    "source $VIMRUNTIME/mswin.vim
 endif
 
 " {{{ NERDTree
