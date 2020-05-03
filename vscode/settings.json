@@ -1,5 +1,15 @@
 {
-    "vim.leader": " ",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.formatting": "Default",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.semanticHighlighting": false,
+    "glassit.alpha": 220,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "extensions.ignoreRecommendations": false,
+    "workbench.colorTheme": "Monochrome Dark",
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -12,8 +22,8 @@
         },
         {
             "before": [
-                "j",
-                "K"
+                "J",
+                "k"
             ],
             "after": [
                 "<Esc>"
@@ -21,8 +31,8 @@
         },
         {
             "before": [
-                "J",
-                "k"
+                "j",
+                "K"
             ],
             "after": [
                 "<Esc>"
@@ -38,8 +48,28 @@
             ]
         }
     ],
-    "editor.formatOnSave": true,
-    "glassit.alpha": 220,
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.icons": false,
+    "editor.colorDecorators": false,
+    "editor.cursorBlinking": "solid",
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.fontFamily": "'IBM Plex Mono', monospace",
+    "editor.fontSize": 17,
+    "editor.links": false,
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "all",
+    "editor.renderWhitespace": "none",
+    "editor.roundedSelection": false,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "editor.selectionHighlight": false,
+    "editor.showFoldingControls": "always",
+    "terminal.integrated.fontFamily": "'IBM Plex Mono', monospace",
+    "terminal.integrated.fontWeight": "300",
+    "workbench.editor.showIcons": false,
+    "workbench.editor.tabCloseButton": "right",
+    "workbench.iconTheme": null,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "none",
 }
